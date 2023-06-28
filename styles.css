@@ -1,0 +1,14 @@
+body {
+    background-color: #101918;
+    color: #9bfff4;
+}
+
+p {
+    font-size: 20px;
+    max-width: 800px;
+    margin-left: calc(50% - 400px);
+}
+
+#lore{
+    text-align: center;
+}
