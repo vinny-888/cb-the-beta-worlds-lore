@@ -16,3 +16,22 @@ p {
 a {
     color: #9bfff4;
 }
+
+.left{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.card{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin-left: calc(50% - 400px);
+}

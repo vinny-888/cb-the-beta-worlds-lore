@@ -5,6 +5,26 @@ let lore = {
 let paragraphs = lore.result.split('\r');
 let loreDiv = document.getElementById('lore');
 paragraphs.forEach((paragraph, index)=>{
-    let html = '<img src="./images/2b/image'+index+'.png" width="800px"></img><br><p>'+paragraph + '</p>';
+    let a = './images/2_avatars/a.png';
+    let b = './images/2_avatars/b.png';
+    let c = './images/2_avatars/c.png';
+    if(paragraph.indexOf('Terra from Vader:') != -1){
+        left = a;
+        right = b;
+    } else if(paragraph.indexOf('Elon Serene:') != -1) {
+        left = b;
+        right = a;
+    } else if(paragraph.indexOf('Unironic Ken:') != -1) {
+        left = c;
+        right = a;
+    }
+    let html = `
+    <div class="card">
+        <img src="./images/2b/image${index}.png" width="800px"></img>
+        <img id="left" class="left" src="${left}" width="300px"></img>
+        <img id="right" class="right" src="${right}" width="300px"></img>
+    </div>
+    <br>${index}<br>
+    <p>${paragraph}</p>`;
     loreDiv.innerHTML += html;
 });

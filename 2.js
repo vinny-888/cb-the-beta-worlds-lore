@@ -5,6 +5,6 @@ let lore = {
 let paragraphs = lore.result.split('\r');
 let loreDiv = document.getElementById('lore');
 paragraphs.forEach((paragraph, index)=>{
-    let html = '<img src="./images/2/image'+index+'.png" width="800px"></img><br><p>'+paragraph + '</p>';
+    let html = '<img src="./images/2/image'+index+'.png" width="800px"></img><br>'+index+'<br><p>'+paragraph + '</p>';
     loreDiv.innerHTML += html;
 });
