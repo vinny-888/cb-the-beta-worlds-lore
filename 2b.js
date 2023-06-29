@@ -24,7 +24,8 @@ paragraphs.forEach((paragraph, index)=>{
         <img id="left" class="left" src="${left}" width="300px"></img>
         <img id="right" class="right" src="${right}" width="300px"></img>
     </div>
-    <br>${index}<br>
+    
     <p>${paragraph}</p>`;
+    //<br>${index}<br>
     loreDiv.innerHTML += html;
 });
